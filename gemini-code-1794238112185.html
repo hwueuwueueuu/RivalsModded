@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090e">
+<meta name="description" content="RIVALS MODDED — Dominate. Survive. Conquer. Jump into the action on Roblox.">
+<title>RIVALS MODDED — Dominate. Survive. Conquer.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#08090e;--panel:#11131c;--muted:#a3a7b5;--white:#f7f8fc;--red:#ff304f;--blue:#28a9ff;--purple:#a855f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 15%,#32101d66,transparent 38%),radial-gradient(ellipse at 85% 25%,#10294a66,transparent 38%),radial-gradient(ellipse at 50% 100%,#28104455,transparent 42%),#08090e}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.18;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
+.navbrand{font:800 27px 'Barlow Condensed',sans-serif;letter-spacing:3px}.navbrand span{color:var(--red)}
+.navlink{font-size:13px;color:#c3c6d0;letter-spacing:1px;text-transform:uppercase}.navlink:hover{color:white}
+.hero{min-height:calc(100svh - 76px);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:90px 0 110px}
+.hero:before,.hero:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;filter:blur(90px);opacity:.2;pointer-events:none}.hero:before{background:var(--red);left:-130px;top:25%}.hero:after{background:var(--blue);right:-130px;bottom:15%}
+.hero-inner{position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #ffffff20;border-radius:99px;background:#ffffff08;color:#c7cbd6;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:#52f5a7;box-shadow:0 0 12px #52f5a7}
+.logo{font:900 clamp(76px,15vw,160px)/.88 'Barlow Condensed',Impact,sans-serif;letter-spacing:5px;margin:30px 0 18px;display:flex;align-items:center;justify-content:center;gap:16px;text-shadow:0 0 22px #ff304f55,0 0 42px #288fff44}
+.logo-word{background:linear-gradient(100deg,#fff 10%,#ff5269 48%,#55baff 88%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 24px #000)}
+.shield{width:clamp(38px,6vw,65px);height:auto;filter:drop-shadow(0 0 12px #a855f7aa)}
+.tagline{font-size:clamp(15px,2.5vw,21px);font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#d7d9e2;margin:25px 0 36px}
+.subline{max-width:540px;margin:0 auto 34px;color:var(--muted);font-size:15px;line-height:1.8}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:18px 38px;min-width:220px;border-radius:8px;background:linear-gradient(105deg,#ff304f,#c42d7b 52%,#386dff);font-size:14px;font-weight:800;letter-spacing:2px;box-shadow:0 0 28px #ff304f55,0 0 55px #386dff25;transition:transform .25s,box-shadow .25s;animation:pulse 2.8s infinite}
+.cta:hover{transform:translateY(-4px) scale(1.025);box-shadow:0 0 35px #ff304f99,0 0 65px #386dff66}
+.cta svg{width:17px;height:17px}
+@keyframes pulse{0%,100%{box-shadow:0 0 24px #ff304f55,0 0 48px #386dff22}50%{box-shadow:0 0 34px #ff304f88,0 0 65px #386dff44}}
+.scrollhint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:3px;color:#777d8d;text-transform:uppercase}
+section{padding:100px 0}.section-kicker{color:var(--red);font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+h2{font:800 clamp(38px,6vw,60px)/.98 'Barlow Condensed',sans-serif;letter-spacing:1px;text-transform:uppercase;margin:0 0 22px}
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:70px;align-items:center}
+.about-copy p{color:var(--muted);font-size:15px;line-height:1.9;margin:0;max-width:540px}
+.about-visual{min-height:300px;border:1px solid #ffffff18;border-radius:16px;position:relative;overflow:hidden;background:linear-gradient(135deg,#17101b,#101b2b 55%,#15101f);display:grid;place-items:center}
+.about-visual:before{content:"";position:absolute;width:250px;height:250px;border:1px solid #ff496a55;transform:rotate(45deg);box-shadow:0 0 80px #a855f733,inset 0 0 60px #288fff22}
+.about-visual:after{content:"";position:absolute;width:160px;height:160px;border:1px solid #48aaff77;transform:rotate(45deg)}
+.visual-word{position:relative;z-index:1;font:900 68px 'Barlow Condensed',sans-serif;letter-spacing:4px;text-shadow:0 0 30px #ff304f99}
+.features{background:linear-gradient(180deg,transparent,#ffffff04,transparent)}
+.section-head{text-align:center;margin-bottom:48px}.section-head p{color:var(--muted);font-size:14px;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{padding:27px 22px;border-radius:12px;border:1px solid #ffffff14;background:linear-gradient(145deg,#171923dd,#0e1018dd);min-height:185px;transition:transform .25s,border-color .25s,background .25s}
+.card:hover{transform:translateY(-7px);border-color:#a855f777;background:linear-gradient(145deg,#201725,#111a29)}
+.card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;background:#ff304f18;color:#ff647a;margin-bottom:24px}
+.card:nth-child(2) .card-icon{background:#288fff18;color:#52b9ff}.card:nth-child(3) .card-icon{background:#a855f722;color:#c28bff}.card:nth-child(4) .card-icon{background:#ffffff12;color:#e5e7ef}
+.card-icon svg{width:21px;height:21px}.card h3{font-size:15px;margin:0 0 9px}.card p{font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.final-cta{text-align:center;padding:95px 20px 110px;border-top:1px solid #ffffff10}
+.final-cta p{color:var(--muted);font-size:14px;margin:0 0 30px}
+footer{border-top:1px solid #ffffff12;padding:25px 0;color:#777d8d;font-size:11px;letter-spacing:.5px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:15px}.footer-brand{font:800 19px 'Barlow Condensed',sans-serif;letter-spacing:2px;color:#dfe2eb}.footer-brand span{color:var(--red)}
+@media(max-width:800px){.about{grid-template-columns:1fr;gap:35px}.about-visual{min-height:230px}.cards{grid-template-columns:repeat(2,1fr)}section{padding:75px 0}}
+@media(max-width:480px){.wrap{width:min(100% - 30px,1120px)}nav{height:64px}.navlink{font-size:10px}.hero{min-height:calc(92svh - 64px);padding:70px 0 90px}.logo{letter-spacing:1px;gap:8px}.tagline{letter-spacing:2px}.cards{grid-template-columns:1fr 1fr;gap:10px}.card{padding:20px 15px;min-height:180px}.card-icon{margin-bottom:18px}.footer-inner{flex-direction:column;text-align:center}.cta{min-width:205px;padding:17px 28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav class="wrap">
+  <a class="navbrand" href="#" aria-label="Rivals Modded home">RI<span>V</span>ALS MODDED</a>
+  <a class="navlink" href="#about">Discover the game  ↘</a>
+</nav>
+<main>
+<header class="hero">
+  <div class="hero-inner wrap">
+    <div class="eyebrow"><span class="dot"></span> The battle starts now</div>
+    <div class="logo" aria-label="Rivals Modded">
+      <svg class="shield" viewBox="0 0 64 72" fill="none" aria-hidden="true"><path d="M32 3 57 13v19c0 17-11 29-25 37C18 61 7 49 7 32V13L32 3Z" stroke="url(#g)" stroke-width="4"/><path d="m20 47 24-26M20 21l24 26" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="m16 17 7 2-2-7M48 51l-7-2 2 7" fill="#fff"/></svg>
+      <span class="logo-word">RIVALS MODDED</span>
+    </div>
+    <div class="tagline">Dominate. Survive. Conquer.</div>
+    <p class="subline">Lock in, trust your aim, and prove you belong at the top. Every round is a chance to take control.</p>
+    <a class="cta" href="https://www.roblox.com/games/127026763819852/Rivals-Modded-Admin-Panelz" target="_blank" rel="noopener noreferrer">
+      PLAY NOW
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+  <div class="scrollhint">Scroll to explore   ↓</div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <div class="section-kicker">01 / About the game</div>
+      <h2>Enter the arena.<br>Own the fight.</h2>
+      <p>Rivals Modded is an intense Roblox experience where skill, strategy, and quick reflexes decide the winner. Jump in, fight for dominance, and rise to the top.</p>
+    </div>
+    <div class="about-visual" aria-label="Rivals Modded game-inspired graphic">
+      <div class="visual-word">NO MERCY.</div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-kicker">02 / What awaits</div>
+      <h2>Built for the bold</h2>
+      <p>Sharpen your skills. Find your edge. Make every match count.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 13h7l-1 9 10-13h-7l1-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div><h3>Fast-paced combat</h3><p>Stay sharp and react fast when every second matters.</p></article>
+      <article class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7 4h10l2 5-7 11L5 9l2-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 9h14M9 4l3 16 3-16" stroke="currentColor" stroke-width="1.5"/></svg></div><h3>Abilities & weapons</h3><p>Mix up your approach and find the loadout that fits.</p></article>
+      <article class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 21h8m-4-4v4M5 4h14v9a7 7 0 0 1-14 0V4Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H2v3a4 4 0 0 0 4 4m13-7h3v3a4 4 0 0 1-4 4" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Competitive leaderboards</h3><p>Put your skills to the test and climb the ranks.</p></article>
+      <article class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></div><h3>Updates & events</h3><p>Come back for fresh challenges and more action.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="section-kicker">03 / Your move</div>
+  <h2>Ready to make your mark?</h2>
+  <p>The arena is waiting. See you on the leaderboard.</p>
+  <a class="cta" href="https://www.roblox.com/games/127026763819852/Rivals-Modded-Admin-Panelz" target="_blank" rel="noopener noreferrer">PLAY RIVALS MODDED NOW
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><div class="footer-brand">RI<span>V</span>ALS MODDED <span style="color:#858b9b;font:500 11px Inter,sans-serif;letter-spacing:.5px">• Play on Roblox</span></div><div>© 2026 Rivals Modded. All rights reserved.</div></div></footer>
+</body>
+</html>
